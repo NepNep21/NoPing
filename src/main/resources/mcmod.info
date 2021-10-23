@@ -1,0 +1,11 @@
+[
+{
+  "modid": "noping",
+  "name": "NoPing",
+  "description": "Mod for preventing ip leaking through server list pinging",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/NepNep21/NoPing",
+  "authorList": ["Nep Nep"]
+}
+]
