@@ -1,9 +1,9 @@
 {
   "required": true,
   "package": "me.nepnep.noping.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_16",
   "client": [
-    "MixinGuiMultiplayer",
-    "MixinServerListEntryNormal"
+    "MixinMultiplayerScreen",
+    "MixinServerEntry"
   ]
 }

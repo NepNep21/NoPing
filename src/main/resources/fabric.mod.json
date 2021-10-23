@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "noping",
+  "version": "${version}",
+
+  "name": "NoPing",
+  "description": "Mod for preventing ip leaking through server list pinging",
+  "authors": [
+    "Nep Nep"
+  ],
+  "contact": {
+    "sources": "https://github.com/NepNep21/NoPing"
+  },
+
+  "license": "MIT",
+
+  "environment": "client",
+
+  "mixins": [
+    "mixins.noping.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
