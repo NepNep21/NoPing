@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 
-version = '1.0.0'
+version = '1.0.1'
 group = 'me.nepnep.noping' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'noping'
 
@@ -110,6 +110,14 @@ jar {
         configurations.include.collect {
             it.isDirectory() ? it : zipTree(it)
         }
+    }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("mcmod.info") {
+        expand "version": project.version
     }
 }
 
